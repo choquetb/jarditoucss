@@ -18,3 +18,10 @@ height: auto;
 }
 .main {display : flex;
 }
+.text-success {
+    color:green;
+
+}
+.text-danger {
+    color:red;
+}

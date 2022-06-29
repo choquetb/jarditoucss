@@ -22,28 +22,31 @@
     <img src="images/promotion.jpg" alt="jarditou_promotion" width="100%" height="auto">
 <h3>Contact</h3>
 <hr>
-<form action="destination.php" method="post" id="formulaire_contact">
+<form action="http://bienvu.net/script.php" method="post" id="formulaireContact">
   <fieldset>
     <legend>Vos coordonnées :</legend>
     <br>
     <label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom">
-    <br>
+    <small></small><br>
     <label for="prenom">Votre prénom* :</label><input type="text" name="prenom" id="prenom">
+    <small></small>
     <br>
     <br>
-    <label for="sexe">Sexe* :</label><input type="radio" name ="sexe" id="sexe" value="Feminin">Féminin
+    <label for="sexe">Sexe* :</label><input type="radio" name ="sexe" id="sexe" value="Feminin" checked>Féminin
     <input type="radio" name ="sexe" value="Masculin">Masculin
     <br>
     <br>
-    <label for="date">Date de naissance* :</label><input type="date" name="ddn" id="date">
+    <label for="date">Date de naissance* :</label><input type="date" name="date" id="date">
     <br>
-<label for="code">Code postal*:</label><input type="text" name="code_postal" id="code">
+<label for="code">Code postal*:</label><input type="text" name="code" id="code">
+<small></small>
 <br>
 <label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse">
 <br>
 <label for="ville">Ville :</label><input type="text" name="ville" id="ville">
 <br>
 <label for="mail">E-mail* :</label><input type="text" name="mail" id="mail" placeholder="dave.loper@afpa.fr">
+<small></small>
 </fieldset>
 <br>
 <br>
@@ -63,10 +66,10 @@
 <label for="question">Votre question*:</label><textarea name="question" id="question"></textarea>
 <br>
 <br>
-<input type="checkbox" name="acceptation-traitement-formulaire">*J'accepte le traitement informatique de ce formulaire
+<input type="checkbox" name="acceptation-traitement-formulaire" checked>*J'accepte le traitement informatique de ce formulaire
 <br>
 <br>
-<input type="submit" value="Envoyer"><input type="reset" value="Annuler">
+<input type="submit" value="Envoyer"><input type="reset" id="reset" value="Annuler">
   </fieldset>
 </form>
       <footer>
@@ -78,6 +81,6 @@
           </ul>
         </nav>
       </footer>
-
+<script src="index.js"></script>
 </body>
 </html>
